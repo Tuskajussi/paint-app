@@ -1,25 +1,24 @@
 import './App.css';
-import React, {useState} from 'react';
+//import React, {useState} from 'react';
 import rooms from "./data.json";
-import NameForm from "./nameform";
+import NameForm, {Form, form} from "./nameform";
 import Spaces from "./spaces";
-import Painted from "./painted";
+//import Painted from "./painted";
 //import handleClick from "./handleClick";
 
 
 function App() {
-  let formData = {};
+  /*
+  let formData = {name: "Default", price: 1, adequacy: 1};
+  const [painted, setPainted] = useState(false)
 
-  const [nameForm, setNameForm] = useState(false)
-
-  const handleFormClick = (name, price, adequacy) => {
-      formData = {name, price, adequacy};
+  const handleFormClick = () => {
+      setPainted(!painted);
   }
-
+*/
   return (
     <div className="app-wrapper">
-      <NameForm handleClick={handleFormClick}/>
-      <Painted data={rooms} dataFromForm={formData}/>
+      <NameForm /*handleClick={handleFormClick}*//>
       <Spaces data={rooms} />
     </div>
   );

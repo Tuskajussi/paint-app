@@ -2,7 +2,7 @@
     {
       "name": "First Floor Lobby",
       "sqm": 200,
-      "surface": 2
+      "surface": 1.2
     },
     {
         "name": "Second Floor Office",
@@ -12,6 +12,6 @@
       {
         "name": "Third Floor Apartment",
         "sqm": 76,
-        "surface": 3
+        "surface": 1.77
       }
   ]

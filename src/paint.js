@@ -1,10 +1,12 @@
-const Paint = ({name, sqm, surface, paintname, price, adequacy}) => {
+const Paint = ({name, sqm, surface, values}) => {
 
+    let liters = ((sqm * surface) * values.levels) / values.adequacy;
+    let totalPrice = liters * values.price;
     return(
         <article className="grid-item">
-            <h1>{name}</h1>
-            <p>{sqm * price * adequacy} € for this room</p>
-            <p>{adequacy} Layers to paint for this surface with standard paints</p>
+            <h3>{name} painted with {values.name}</h3>
+            <p>{liters.toFixed(2)} liters of paint needed</p>
+            <p>{totalPrice.toFixed(2)} € in costs</p>
         </article>
     );
 }

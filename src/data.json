@@ -1,0 +1,17 @@
+[
+    {
+      "name": "First Floor Lobby",
+      "sqm": 200,
+      "surface": 2
+    },
+    {
+        "name": "Second Floor Office",
+        "sqm": 50,
+        "surface": 1
+      },
+      {
+        "name": "Third Floor Apartment",
+        "sqm": 76,
+        "surface": 3
+      }
+  ]
